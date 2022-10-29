@@ -1,0 +1,70 @@
+﻿@page "/mostrarusuarios"
+
+<h3>Mostrar_Usuarios</h3>
+
+<div></div>
+<div></div>
+
+<h6>Ingrese los datos del usuario que desea buscar o seleccione Mostrar Todos Los Usuarios:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idusuario">ID Usuario</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idusuario" id="idusuario">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Usuario</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="apellido">Apellido del Usuario</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="apellido" id="apellido">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Usuario Encontrado');">Buscar Usuario</button>
+</div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Usuarios Encontrados');">Mostrar Todos los Usuarios</button>
+</div>
+
+<div>. </div>
+<div>Usuarios:</div>
+<div>. </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+        </tr>
+    </thead>
+</table>

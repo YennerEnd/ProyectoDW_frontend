@@ -1,0 +1,60 @@
+﻿@page "/entrada"
+
+<h3>Entradas de Caja</h3>
+<div></div>
+<div></div>
+<h4>Agregar Entrada de Caja</h4>
+<div></div>
+<h6>Ingrese los datos del cliente:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="apellido">Apellido del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="apellido" id="apellido">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="acreditar">Monto a Acreditar</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="acreditar" id="acreditar">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Entrada de Caja Registrada');">Agregar Entrada de Caja</button>
+</div>

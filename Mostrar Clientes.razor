@@ -1,0 +1,71 @@
+﻿@page "/mostrarclientes"
+
+<h3>Mostrar Clientes</h3>
+
+<div></div>
+<div></div>
+
+<h6>Ingrese los datos del cliente que desea buscar o seleccione Mostrar Todos Los Clientes:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="apellido">Apellido del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="apellido" id="apellido">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Cliente Encontrado');">Buscar Cliente</button>
+</div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Clientes Encontrados');">Mostrar Todos los Clientes</button>
+</div>
+
+<div>. </div>
+<div>Clientes:</div>
+<div>. </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+            <th>Monto en Cuenta</th>
+        </tr>
+    </thead>
+</table>

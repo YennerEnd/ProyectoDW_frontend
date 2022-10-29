@@ -1,0 +1,80 @@
+﻿@page "/agregarcliente"
+
+<h3>Agregar Cliente</h3>
+
+<div></div>
+<div></div>
+
+<h6>Ingrese los datos del cliente que desea agregar:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="apellido">Apellido del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="apellido" id="apellido">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="telefono">Numero de Telefono</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="telefono" id="telefono">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="direccion">Direccion del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="direccion" id="direccion">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="montoi">Monto Inicial en Cuenta</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="montoi" id="montoi">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Cliente Agregado Exitosamente');">Agregar Cliente</button>
+</div>

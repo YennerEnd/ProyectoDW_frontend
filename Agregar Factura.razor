@@ -1,0 +1,112 @@
+﻿@page "/agregarfactura"
+
+<h3>Agregar Factura</h3>
+
+<div></div>
+<div></div>
+<h4>Agregar Entrada de Caja</h4>
+<div></div>
+<h6>Ingrese los datos del cliente y los datos de la factura:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombrecl">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombrecl" id="nombrecl">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="fecha">Fecha</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="fecha" id="fecha">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idfactura">ID de la Factura</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idfactura" id="idfactura">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombreprod">Nombre del Producto</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombreprod" id="nombreprod">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="cantidad">Cantidad</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="cantidad" id="cantidad">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="precio">Precio Unitario</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="precio" id="precio">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Producto Agregado');">Agregar Producto a la Factura</button>
+</div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Factura Registrada Exitosamente');">Completar Factura</button>
+</div>
+
+<div>. </div>
+<div>Resumen de Factura:</div>
+<div>. </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID Factura</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Subtotal</th>
+            <th>Total Final</th>
+        </tr>
+    </thead>
+</table>

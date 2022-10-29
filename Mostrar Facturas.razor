@@ -1,0 +1,67 @@
+﻿@page "/mostrarfacturas"
+
+<h3>Mostrar Facturas</h3>
+
+<div></div>
+<div></div>
+
+<h6>Ingrese los datos del cliente para mostrar facturas:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="apellido">Apellido del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="apellido" id="apellido">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Mostrando Facturas');">Mostrar Estado de Cuenta</button>
+</div>
+
+<div>. </div>
+<div>Facturas:</div>
+<div>. </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID Factura</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>No. Productos</th>
+            <th>Costo Total</th>
+        </tr>
+    </thead>
+</table>
+

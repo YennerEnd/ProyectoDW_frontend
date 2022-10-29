@@ -1,0 +1,65 @@
+﻿@page "/mostrarestado"
+
+<h3>Mostrar Estados de Cuenta</h3>
+<div></div>
+<div></div>
+<h6>Ingrese los datos del cliente para mostrar estado de cuenta:</h6>
+
+<form>
+    <fieldset>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="idcliente">ID del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="number" name="idcliente" id="idcliente">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="nombre">Nombre del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2">
+                <label for="apellido">Apellido del Cliente</label>
+            </div>
+
+            <div class="col-md-4">
+                <input class="form-control" type="text" name="apellido" id="apellido">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<div></div>
+
+<div class="row content">
+    <button type="submit" onclick="alert('Estado de Cuenta Generado');">Mostrar Estado de Cuenta</button>
+</div>
+
+<div>. </div>
+<div>Estado de Cuenta:</div>
+<div>. </div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Tipo de Movimiento</th>
+            <th>Monto   </th>
+            <th>Total Final</th>
+        </tr>
+    </thead>
+</table>
